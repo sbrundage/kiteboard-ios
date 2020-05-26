@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--City Search View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CitySearchViewController" customModule="LetsKite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your kiting city" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swl-2g-N70">
+                                <rect key="frame" x="107" y="436" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Th4-A2-jjd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-zc-72c">
+                                <rect key="frame" x="117" y="495" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.39692651269194329" blue="0.82371275906735753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="b9y-AZ-CFv"/>
+                                </constraints>
+                                <state key="normal" title="Find Wind">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWindButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eMe-xF-xbH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="swl-2g-N70" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9Zk-Lh-ZW2"/>
+                            <constraint firstItem="FbU-zc-72c" firstAttribute="centerX" secondItem="swl-2g-N70" secondAttribute="centerX" id="Zeb-Da-sOT"/>
+                            <constraint firstItem="swl-2g-N70" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eGf-ke-pQX"/>
+                            <constraint firstItem="FbU-zc-72c" firstAttribute="top" secondItem="swl-2g-N70" secondAttribute="bottom" constant="25" id="noK-BE-v25"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="swl-2g-N70" id="Ctl-1C-Uhc"/>
+                        <outlet property="findWindButton" destination="FbU-zc-72c" id="jSB-ih-G6g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+        <!--Wind View Controller-->
+        <scene sceneID="kOr-ci-3mh">
+            <objects>
+                <viewController id="Khs-Ii-1ME" customClass="WindViewController" customModule="LetsKite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFm-Fn-1oO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nu7-V1-DP5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nu7-V1-DP5" firstAttribute="leading" secondItem="bP4-bC-BpS" secondAttribute="leading" id="CfK-zK-Jwy"/>
+                            <constraint firstItem="nu7-V1-DP5" firstAttribute="top" secondItem="bP4-bC-BpS" secondAttribute="top" id="YF5-Wq-S3Q"/>
+                            <constraint firstItem="bP4-bC-BpS" firstAttribute="bottom" secondItem="nu7-V1-DP5" secondAttribute="bottom" id="lUy-6Q-0Sk"/>
+                            <constraint firstItem="bP4-bC-BpS" firstAttribute="trailing" secondItem="nu7-V1-DP5" secondAttribute="trailing" id="xym-TE-TmA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bP4-bC-BpS"/>
+                    </view>
+                    <connections>
+                        <outlet property="windForecastTableView" destination="nu7-V1-DP5" id="MrC-cK-Tpi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5u-Ra-vl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="139"/>
+        </scene>
+    </scenes>
+</document>

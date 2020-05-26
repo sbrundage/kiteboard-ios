@@ -1,0 +1,12 @@
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.pbxuser
+xcuserdata/
+
+## Finder metadata
+.DS_Store
+
+LetsKite/Model/APIKeys.swift
