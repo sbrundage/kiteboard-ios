@@ -17,7 +17,21 @@
 		9EF229FB247CA03800347DE9 /* WebServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229FA247CA03800347DE9 /* WebServiceController.swift */; };
 		9EF229FD247CA0B300347DE9 /* OpenWeatherMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */; };
 		9EF229FF247CA0E500347DE9 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229FE247CA0E500347DE9 /* APIKeys.swift */; };
+		9EF22A07247CA75800347DE9 /* LetsKiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A06247CA75800347DE9 /* LetsKiteTests.swift */; };
+		9EF22A11247CB24000347DE9 /* OpenWeatherResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */; };
+		9EF22A13247DBC7400347DE9 /* OpenWeatherMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */; };
+		9EF22A15247DCABD00347DE9 /* ObserverDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EF22A09247CA75800347DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EF229D4247C958400347DE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF229DB247C958400347DE9;
+			remoteInfo = LetsKite;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9EF229DC247C958400347DE9 /* LetsKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +46,23 @@
 		9EF229FA247CA03800347DE9 /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
 		9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapController.swift; sourceTree = "<group>"; };
 		9EF229FE247CA0E500347DE9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		9EF22A04247CA75800347DE9 /* LetsKiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsKiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF22A06247CA75800347DE9 /* LetsKiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsKiteTests.swift; sourceTree = "<group>"; };
+		9EF22A08247CA75800347DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponseModels.swift; sourceTree = "<group>"; };
+		9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewModel.swift; sourceTree = "<group>"; };
+		9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverDesignPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9EF229D9247C958400347DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF22A01247CA75800347DE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9EF229DE247C958400347DE9 /* LetsKite */,
+				9EF22A05247CA75800347DE9 /* LetsKiteTests */,
 				9EF229DD247C958400347DE9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				9EF229DC247C958400347DE9 /* LetsKite.app */,
+				9EF22A04247CA75800347DE9 /* LetsKiteTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +98,7 @@
 				9EF229F9247CA00700347DE9 /* ViewModel */,
 				9EF229DF247C958400347DE9 /* AppDelegate.swift */,
 				9EF229E1247C958400347DE9 /* SceneDelegate.swift */,
+				9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */,
 				9EF229E5247C958400347DE9 /* Main.storyboard */,
 				9EF229E8247C958500347DE9 /* Assets.xcassets */,
 				9EF229EA247C958500347DE9 /* LaunchScreen.storyboard */,
@@ -89,6 +119,7 @@
 		9EF229F8247C9FFB00347DE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9EF22A0F247CB1FF00347DE9 /* ResponseModels */,
 				9EF229FA247CA03800347DE9 /* WebServiceController.swift */,
 				9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */,
 				9EF229FE247CA0E500347DE9 /* APIKeys.swift */,
@@ -99,8 +130,26 @@
 		9EF229F9247CA00700347DE9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9EF22A05247CA75800347DE9 /* LetsKiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF22A06247CA75800347DE9 /* LetsKiteTests.swift */,
+				9EF22A08247CA75800347DE9 /* Info.plist */,
+			);
+			path = LetsKiteTests;
+			sourceTree = "<group>";
+		};
+		9EF22A0F247CB1FF00347DE9 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */,
+			);
+			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +172,24 @@
 			productReference = 9EF229DC247C958400347DE9 /* LetsKite.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9EF22A03247CA75800347DE9 /* LetsKiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF22A0B247CA75800347DE9 /* Build configuration list for PBXNativeTarget "LetsKiteTests" */;
+			buildPhases = (
+				9EF22A00247CA75800347DE9 /* Sources */,
+				9EF22A01247CA75800347DE9 /* Frameworks */,
+				9EF22A02247CA75800347DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF22A0A247CA75800347DE9 /* PBXTargetDependency */,
+			);
+			name = LetsKiteTests;
+			productName = LetsKiteTests;
+			productReference = 9EF22A04247CA75800347DE9 /* LetsKiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +202,10 @@
 				TargetAttributes = {
 					9EF229DB247C958400347DE9 = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					9EF22A03247CA75800347DE9 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 9EF229DB247C958400347DE9;
 					};
 				};
 			};
@@ -152,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				9EF229DB247C958400347DE9 /* LetsKite */,
+				9EF22A03247CA75800347DE9 /* LetsKiteTests */,
 			);
 		};
 /* End PBXProject section */
@@ -167,6 +239,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EF22A02247CA75800347DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -174,17 +253,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF22A13247DBC7400347DE9 /* OpenWeatherMapViewModel.swift in Sources */,
 				9EF229F7247C9D5000347DE9 /* WindViewController.swift in Sources */,
+				9EF22A11247CB24000347DE9 /* OpenWeatherResponseModels.swift in Sources */,
 				9EF229FB247CA03800347DE9 /* WebServiceController.swift in Sources */,
 				9EF229FF247CA0E500347DE9 /* APIKeys.swift in Sources */,
 				9EF229E0247C958400347DE9 /* AppDelegate.swift in Sources */,
 				9EF229E2247C958400347DE9 /* SceneDelegate.swift in Sources */,
 				9EF229F5247C981D00347DE9 /* CitySearchViewController.swift in Sources */,
+				9EF22A15247DCABD00347DE9 /* ObserverDesignPattern.swift in Sources */,
 				9EF229FD247CA0B300347DE9 /* OpenWeatherMapController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EF22A00247CA75800347DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF22A07247CA75800347DE9 /* LetsKiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EF22A0A247CA75800347DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF229DB247C958400347DE9 /* LetsKite */;
+			targetProxy = 9EF22A09247CA75800347DE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9EF229E5247C958400347DE9 /* Main.storyboard */ = {
@@ -356,6 +454,46 @@
 			};
 			name = Release;
 		};
+		9EF22A0C247CA75800347DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U54B96T9;
+				INFOPLIST_FILE = LetsKiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbrundage.LetsKiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsKite.app/LetsKite";
+			};
+			name = Debug;
+		};
+		9EF22A0D247CA75800347DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7U54B96T9;
+				INFOPLIST_FILE = LetsKiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sbrundage.LetsKiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsKite.app/LetsKite";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +511,15 @@
 			buildConfigurations = (
 				9EF229F1247C958500347DE9 /* Debug */,
 				9EF229F2247C958500347DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EF22A0B247CA75800347DE9 /* Build configuration list for PBXNativeTarget "LetsKiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF22A0C247CA75800347DE9 /* Debug */,
+				9EF22A0D247CA75800347DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

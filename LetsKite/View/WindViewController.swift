@@ -10,17 +10,33 @@ import UIKit
 
 class WindViewController: UIViewController {
     @IBOutlet weak var windForecastTableView: UITableView!
+    private(set) var openWeatherViewModel = OpenWeatherMapViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupView()
+    }
+    
+    private func setupView() {
         windForecastTableView.delegate = self
-//        windForecastTableView.dataSource = self
+    //        windForecastTableView.dataSource = self
+        openWeatherViewModel.addObserver(self)
     }
 }
 
 extension WindViewController: UITableViewDelegate {
     
+}
+
+extension WindViewController: ObserverProtocol {
+    var id: String {
+        return "WindViewController"
+    }
+    
+    func update<T>(with newValue: T) {
+        print("Got a new value of: \(newValue)")
+    }
 }
 
 //extension WindViewController: UITableViewDataSource {

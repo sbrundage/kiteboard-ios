@@ -13,26 +13,29 @@ class CitySearchViewController: UIViewController {
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var findWindButton: UIButton!
     
+    let weatherService = OpenWeatherMapController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cityTextField.delegate = self
-    }
-    
-    @IBAction func findWindButtonClicked(_ sender: Any) {
-        if let city = cityTextField.text {
-            
-        }
+        
+        setupView()
     }
     
     private func setupView() {
-        cityTextField.delegate = self
-        findWindButton.isEnabled = false
+//        findWindButton.isEnabled = false
+        self.navigationController?.navigationBar.barTintColor = .blue
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DisplayWindForecast" {
+            if let destinationVC = segue.destination as? WindViewController {
+                guard let city = cityTextField.text else { return }
+                destinationVC.openWeatherViewModel.city = city
+            }
+        }
     }
 }
 
-extension CitySearchViewController: UITextFieldDelegate {
-    // Handle user input
-    // disable / enable button depending on input text
-}
+// TODO: Handle city text in citytextfield
+// Make sure valid
+// Hide / show findWindButton depending on if there is text in textfield
