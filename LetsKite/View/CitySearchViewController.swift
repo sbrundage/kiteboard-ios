@@ -30,7 +30,8 @@ class CitySearchViewController: UIViewController {
         if segue.identifier == "DisplayWindForecast" {
             if let destinationVC = segue.destination as? WindViewController {
                 guard let city = cityTextField.text else { return }
-                destinationVC.openWeatherViewModel.city = city
+//                destinationVC.openWeatherViewModel.city = city
+                destinationVC.openWeatherMapPublisher.city = city
             }
         }
     }

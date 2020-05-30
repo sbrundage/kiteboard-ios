@@ -12,11 +12,15 @@ struct OpenWeatherMapResponseModel: Codable {
     var list: [OpenWeatherMapData] = []
 }
 
-struct OpenWeatherMapData: Codable {
+public struct OpenWeatherMapData: Codable {
     var main: Main
     var weather: [Weather]
     var wind: Wind
-    var dt_txt: String
+    var dt: Double
+    
+    var date: Date {
+        return Date(timeIntervalSince1970: dt)
+    }
 }
 
 struct Main: Codable {
