@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E67C2A224891DF1001D9B0F /* OpenWeatherMapResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67C2A124891DF1001D9B0F /* OpenWeatherMapResponseModel.swift */; };
+		9E87F90A24895B5100C451CA /* TimeIntervalToDateConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E87F90924895B5100C451CA /* TimeIntervalToDateConverterTest.swift */; };
 		9E9C5E752482936B007B239B /* OpenWeatherMapPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C5E742482936B007B239B /* OpenWeatherMapPublisher.swift */; };
 		9E9C5E7A2482A14B007B239B /* Date+ModifyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C5E792482A14B007B239B /* Date+ModifyComponents.swift */; };
+		9EB0ADF1248C4CD50099FE09 /* DayOutlookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0ADEF248C4CD50099FE09 /* DayOutlookCell.swift */; };
+		9EB0ADF2248C4CD50099FE09 /* DayOutlookCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF0248C4CD50099FE09 /* DayOutlookCell.xib */; };
+		9EB0ADF4248D491C0099FE09 /* HourlyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF3248D491C0099FE09 /* HourlyStackView.swift */; };
+		9EB0ADF8248D4D480099FE09 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF7248D4D480099FE09 /* HourView.swift */; };
+		9EB0ADFA248D4D570099FE09 /* HourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF9248D4D570099FE09 /* HourView.xib */; };
 		9EF229E0247C958400347DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229DF247C958400347DE9 /* AppDelegate.swift */; };
 		9EF229E2247C958400347DE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229E1247C958400347DE9 /* SceneDelegate.swift */; };
 		9EF229E7247C958400347DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF229E5247C958400347DE9 /* Main.storyboard */; };
@@ -20,8 +27,7 @@
 		9EF229FD247CA0B300347DE9 /* OpenWeatherMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */; };
 		9EF229FF247CA0E500347DE9 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229FE247CA0E500347DE9 /* APIKeys.swift */; };
 		9EF22A07247CA75800347DE9 /* OpenWeatherMapControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A06247CA75800347DE9 /* OpenWeatherMapControllerTests.swift */; };
-		9EF22A11247CB24000347DE9 /* OpenWeatherResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */; };
-		9EF22A13247DBC7400347DE9 /* OpenWeatherMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */; };
+		9EF22A11247CB24000347DE9 /* OpenWeatherMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A10247CB24000347DE9 /* OpenWeatherMapModel.swift */; };
 		9EF22A15247DCABD00347DE9 /* ObserverDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,8 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E67C2A124891DF1001D9B0F /* OpenWeatherMapResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapResponseModel.swift; sourceTree = "<group>"; };
+		9E87F90924895B5100C451CA /* TimeIntervalToDateConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalToDateConverterTest.swift; sourceTree = "<group>"; };
 		9E9C5E742482936B007B239B /* OpenWeatherMapPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapPublisher.swift; sourceTree = "<group>"; };
 		9E9C5E792482A14B007B239B /* Date+ModifyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ModifyComponents.swift"; sourceTree = "<group>"; };
+		9EB0ADEF248C4CD50099FE09 /* DayOutlookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayOutlookCell.swift; sourceTree = "<group>"; };
+		9EB0ADF0248C4CD50099FE09 /* DayOutlookCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayOutlookCell.xib; sourceTree = "<group>"; };
+		9EB0ADF3248D491C0099FE09 /* HourlyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyStackView.swift; sourceTree = "<group>"; };
+		9EB0ADF7248D4D480099FE09 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
+		9EB0ADF9248D4D570099FE09 /* HourView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourView.xib; sourceTree = "<group>"; };
 		9EF229DC247C958400347DE9 /* LetsKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF229DF247C958400347DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF229E1247C958400347DE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,12 +62,11 @@
 		9EF229F6247C9D5000347DE9 /* WindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindViewController.swift; sourceTree = "<group>"; };
 		9EF229FA247CA03800347DE9 /* WebServiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceController.swift; sourceTree = "<group>"; };
 		9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapController.swift; sourceTree = "<group>"; };
-		9EF229FE247CA0E500347DE9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		9EF229FE247CA0E500347DE9 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = ../Model/APIKeys.swift; sourceTree = "<group>"; };
 		9EF22A04247CA75800347DE9 /* LetsKiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsKiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF22A06247CA75800347DE9 /* OpenWeatherMapControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapControllerTests.swift; sourceTree = "<group>"; };
 		9EF22A08247CA75800347DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherResponseModels.swift; sourceTree = "<group>"; };
-		9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapViewModel.swift; sourceTree = "<group>"; };
+		9EF22A10247CB24000347DE9 /* OpenWeatherMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenWeatherMapModel.swift; sourceTree = "<group>"; };
 		9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverDesignPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,10 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E3CEFD0248BFB7C00C20CC5 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0ADEF248C4CD50099FE09 /* DayOutlookCell.swift */,
+				9EB0ADF0248C4CD50099FE09 /* DayOutlookCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		9E3CEFDD248C040E00C20CC5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				9EB0ADF3248D491C0099FE09 /* HourlyStackView.swift */,
+				9EB0ADF7248D4D480099FE09 /* HourView.swift */,
+				9EB0ADF9248D4D570099FE09 /* HourView.xib */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		9E67C2A024891C91001D9B0F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EF229FA247CA03800347DE9 /* WebServiceController.swift */,
+				9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */,
+				9E9C5E742482936B007B239B /* OpenWeatherMapPublisher.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		9E9C5E782482A0EB007B239B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				9E9C5E792482A14B007B239B /* Date+ModifyComponents.swift */,
+				9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */,
+				9EF229FE247CA0E500347DE9 /* APIKeys.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -105,13 +148,13 @@
 		9EF229DE247C958400347DE9 /* LetsKite */ = {
 			isa = PBXGroup;
 			children = (
-				9E9C5E782482A0EB007B239B /* Helpers */,
+				9E67C2A024891C91001D9B0F /* Controllers */,
 				9EF229F8247C9FFB00347DE9 /* Model */,
 				9EF229F3247C97E800347DE9 /* View */,
 				9EF229F9247CA00700347DE9 /* ViewModel */,
+				9E9C5E782482A0EB007B239B /* Helpers */,
 				9EF229DF247C958400347DE9 /* AppDelegate.swift */,
 				9EF229E1247C958400347DE9 /* SceneDelegate.swift */,
-				9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */,
 				9EF229E5247C958400347DE9 /* Main.storyboard */,
 				9EF229E8247C958500347DE9 /* Assets.xcassets */,
 				9EF229EA247C958500347DE9 /* LaunchScreen.storyboard */,
@@ -123,6 +166,8 @@
 		9EF229F3247C97E800347DE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9E3CEFDD248C040E00C20CC5 /* CustomViews */,
+				9E3CEFD0248BFB7C00C20CC5 /* XIB */,
 				9EF229F4247C981D00347DE9 /* CitySearchViewController.swift */,
 				9EF229F6247C9D5000347DE9 /* WindViewController.swift */,
 			);
@@ -132,11 +177,7 @@
 		9EF229F8247C9FFB00347DE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9EF22A0F247CB1FF00347DE9 /* ResponseModels */,
-				9EF229FA247CA03800347DE9 /* WebServiceController.swift */,
-				9EF229FC247CA0B300347DE9 /* OpenWeatherMapController.swift */,
-				9E9C5E742482936B007B239B /* OpenWeatherMapPublisher.swift */,
-				9EF229FE247CA0E500347DE9 /* APIKeys.swift */,
+				9E67C2A124891DF1001D9B0F /* OpenWeatherMapResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,7 +185,7 @@
 		9EF229F9247CA00700347DE9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9EF22A12247DBC7400347DE9 /* OpenWeatherMapViewModel.swift */,
+				9EF22A10247CB24000347DE9 /* OpenWeatherMapModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -153,17 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				9EF22A06247CA75800347DE9 /* OpenWeatherMapControllerTests.swift */,
+				9E87F90924895B5100C451CA /* TimeIntervalToDateConverterTest.swift */,
 				9EF22A08247CA75800347DE9 /* Info.plist */,
 			);
 			path = LetsKiteTests;
-			sourceTree = "<group>";
-		};
-		9EF22A0F247CB1FF00347DE9 /* ResponseModels */ = {
-			isa = PBXGroup;
-			children = (
-				9EF22A10247CB24000347DE9 /* OpenWeatherResponseModels.swift */,
-			);
-			path = ResponseModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EB0ADFA248D4D570099FE09 /* HourView.xib in Resources */,
 				9EF229EC247C958500347DE9 /* LaunchScreen.storyboard in Resources */,
+				9EB0ADF2248C4CD50099FE09 /* DayOutlookCell.xib in Resources */,
 				9EF229E9247C958500347DE9 /* Assets.xcassets in Resources */,
 				9EF229E7247C958400347DE9 /* Main.storyboard in Resources */,
 			);
@@ -268,17 +304,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E9C5E752482936B007B239B /* OpenWeatherMapPublisher.swift in Sources */,
-				9EF22A13247DBC7400347DE9 /* OpenWeatherMapViewModel.swift in Sources */,
 				9EF229F7247C9D5000347DE9 /* WindViewController.swift in Sources */,
 				9E9C5E7A2482A14B007B239B /* Date+ModifyComponents.swift in Sources */,
-				9EF22A11247CB24000347DE9 /* OpenWeatherResponseModels.swift in Sources */,
+				9EF22A11247CB24000347DE9 /* OpenWeatherMapModel.swift in Sources */,
+				9EB0ADF4248D491C0099FE09 /* HourlyStackView.swift in Sources */,
 				9EF229FB247CA03800347DE9 /* WebServiceController.swift in Sources */,
+				9E67C2A224891DF1001D9B0F /* OpenWeatherMapResponseModel.swift in Sources */,
 				9EF229FF247CA0E500347DE9 /* APIKeys.swift in Sources */,
 				9EF229E0247C958400347DE9 /* AppDelegate.swift in Sources */,
 				9EF229E2247C958400347DE9 /* SceneDelegate.swift in Sources */,
 				9EF229F5247C981D00347DE9 /* CitySearchViewController.swift in Sources */,
 				9EF22A15247DCABD00347DE9 /* ObserverDesignPattern.swift in Sources */,
+				9EB0ADF1248C4CD50099FE09 /* DayOutlookCell.swift in Sources */,
 				9EF229FD247CA0B300347DE9 /* OpenWeatherMapController.swift in Sources */,
+				9EB0ADF8248D4D480099FE09 /* HourView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EF22A07247CA75800347DE9 /* OpenWeatherMapControllerTests.swift in Sources */,
+				9E87F90A24895B5100C451CA /* TimeIntervalToDateConverterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

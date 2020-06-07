@@ -13,67 +13,78 @@ class WindViewController: UIViewController {
 //    private(set) var openWeatherViewModel = OpenWeatherMapViewModel()
     private(set) var openWeatherMapPublisher = OpenWeatherMapPublisher()
     
-    private var forecastDictionary: DateForecastDictionary?
+    private var windViewModel: WindOutlookViewModel? {
+        didSet {
+            refreshTableView()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupView()
+        windForecastTableView.register(UINib(nibName: "DayOutlookCell", bundle: nil), forCellReuseIdentifier: "DayOutlookCell")
+        windForecastTableView.estimatedRowHeight = 200
+        windForecastTableView.rowHeight = UITableView.automaticDimension
     }
     
     private func setupView() {
         windForecastTableView.delegate = self
-        openWeatherMapPublisher.addObserver(self)
         windForecastTableView.dataSource = self
+        openWeatherMapPublisher.addObserver(self)
+    }
+        
+    private func refreshTableView() {
+        DispatchQueue.main.async {
+            self.windForecastTableView.reloadData()
+        }
     }
 }
 
 extension WindViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return windViewModel?.dayViews.count ?? 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DayCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DayOutlookCell", for: indexPath) as! DayOutlookCell
         
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 8
-        cell.clipsToBounds = true
-        
+        cell.dayViewModel = windViewModel?.dayViews[indexPath.row]
+//        cell.layer.cornerRadius = 5
+//        cell.layer.shadowRadius = 7
+//        cell.layer.shadowOpacity = 0.8
+//        cell.layer.borderColor = CGColor(srgbRed: 236, green: 240, blue: 241, alpha: 1.0)
+//        cell.layer.borderWidth = 20
+//        cell.layer.borderColor = UIColor(red: 246, green: 240, blue: 241, alpha: 1.0)
+//        cell.layer.shadowColor = CGColor(srgbRed: 236, green: 240, blue: 241, alpha: 1.0)
+
         return cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return forecastDictionary?.count ?? 5
+        return 1
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 25
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .clear
-        return headerView
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 10
+//    }
 }
 
 extension WindViewController: UITableViewDelegate {
 
 }
 
-extension WindViewController: ObserverProtocol {
+extension WindViewController: ObserverProtocol {    
     var id: String {
         return "WindViewController"
     }
     
     func update<T>(with newValue: T) {
-        if let updatedValue = newValue as? DateForecastDictionary {
-            forecastDictionary = updatedValue
-        }
+        guard let updatedModel = newValue as? WindOutlookViewModel else { return }
+        self.windViewModel = updatedModel
     }
 }
