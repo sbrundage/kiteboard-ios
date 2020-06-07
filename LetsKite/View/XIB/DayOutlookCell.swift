@@ -36,8 +36,6 @@ class DayOutlookCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10))
-//        hourlyOutlookStackView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10))
-//        hourlyOutlookStackView.layoutMargins = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
     }
     
     override func prepareForReuse() {

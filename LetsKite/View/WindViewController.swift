@@ -50,13 +50,6 @@ extension WindViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DayOutlookCell", for: indexPath) as! DayOutlookCell
         
         cell.dayViewModel = windViewModel?.dayViews[indexPath.row]
-//        cell.layer.cornerRadius = 5
-//        cell.layer.shadowRadius = 7
-//        cell.layer.shadowOpacity = 0.8
-//        cell.layer.borderColor = CGColor(srgbRed: 236, green: 240, blue: 241, alpha: 1.0)
-//        cell.layer.borderWidth = 20
-//        cell.layer.borderColor = UIColor(red: 246, green: 240, blue: 241, alpha: 1.0)
-//        cell.layer.shadowColor = CGColor(srgbRed: 236, green: 240, blue: 241, alpha: 1.0)
 
         return cell
     }
@@ -68,14 +61,6 @@ extension WindViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-    
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 10
-//    }
-}
-
-extension WindViewController: UITableViewDelegate {
-
 }
 
 extension WindViewController: ObserverProtocol {    

@@ -16,6 +16,7 @@
 		9EB0ADF4248D491C0099FE09 /* HourlyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF3248D491C0099FE09 /* HourlyStackView.swift */; };
 		9EB0ADF8248D4D480099FE09 /* HourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF7248D4D480099FE09 /* HourView.swift */; };
 		9EB0ADFA248D4D570099FE09 /* HourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EB0ADF9248D4D570099FE09 /* HourView.xib */; };
+		9EEA2994248D962F00652E26 /* UIView+WindSpeedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA2993248D962F00652E26 /* UIView+WindSpeedColor.swift */; };
 		9EF229E0247C958400347DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229DF247C958400347DE9 /* AppDelegate.swift */; };
 		9EF229E2247C958400347DE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF229E1247C958400347DE9 /* SceneDelegate.swift */; };
 		9EF229E7247C958400347DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF229E5247C958400347DE9 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		9EB0ADF3248D491C0099FE09 /* HourlyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyStackView.swift; sourceTree = "<group>"; };
 		9EB0ADF7248D4D480099FE09 /* HourView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourView.swift; sourceTree = "<group>"; };
 		9EB0ADF9248D4D570099FE09 /* HourView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HourView.xib; sourceTree = "<group>"; };
+		9EEA2993248D962F00652E26 /* UIView+WindSpeedColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+WindSpeedColor.swift"; sourceTree = "<group>"; };
 		9EF229DC247C958400347DE9 /* LetsKite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsKite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF229DF247C958400347DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EF229E1247C958400347DE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9C5E792482A14B007B239B /* Date+ModifyComponents.swift */,
+				9EEA2993248D962F00652E26 /* UIView+WindSpeedColor.swift */,
 				9EF22A14247DCABD00347DE9 /* ObserverDesignPattern.swift */,
 				9EF229FE247CA0E500347DE9 /* APIKeys.swift */,
 			);
@@ -315,6 +318,7 @@
 				9EF229E2247C958400347DE9 /* SceneDelegate.swift in Sources */,
 				9EF229F5247C981D00347DE9 /* CitySearchViewController.swift in Sources */,
 				9EF22A15247DCABD00347DE9 /* ObserverDesignPattern.swift in Sources */,
+				9EEA2994248D962F00652E26 /* UIView+WindSpeedColor.swift in Sources */,
 				9EB0ADF1248C4CD50099FE09 /* DayOutlookCell.swift in Sources */,
 				9EF229FD247CA0B300347DE9 /* OpenWeatherMapController.swift in Sources */,
 				9EB0ADF8248D4D480099FE09 /* HourView.swift in Sources */,
