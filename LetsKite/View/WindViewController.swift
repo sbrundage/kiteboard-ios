@@ -29,7 +29,6 @@ class WindViewController: UIViewController {
     }
     
     private func setupView() {
-        windForecastTableView.delegate = self
         windForecastTableView.dataSource = self
         openWeatherMapPublisher.addObserver(self)
     }
